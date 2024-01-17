@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React from "react";
 import { SiGmail, SiLinkedin, SiGithub, SiTwitter } from "react-icons/si";
 import {
   Github_Link,

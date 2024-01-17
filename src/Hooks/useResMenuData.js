@@ -11,7 +11,7 @@ const useResMenuData = (
 
   useEffect(() => {
     getRestaurantInfo(); // call getRestaurantInfo function so it fetch api data and set data in restaurant state variable
-  }, [getRestaurantInfo]);
+  });
 
   async function getRestaurantInfo() {
     try {

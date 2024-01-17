@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React from "react";
 import SocialProfileClass from "./SocialProfile";
 
 const ProfileUserClass=(props)=> {  

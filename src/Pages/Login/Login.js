@@ -22,10 +22,10 @@ const Login = () => {
   useEffect(() => {
     // if length of token is equal to 100 then navigate to previous page
     if (getLocalStorage?.token?.length === 100) {
-      navigate(-1);
+      navigate("/");
     }
-    console.log(getLocalStorage.token)
-  }, [getLocalStorage]);
+    // console.log(getLocalStorage.token)
+  });
 
   function handleNavigate(values) {
     let index = values?.email.indexOf('@');
