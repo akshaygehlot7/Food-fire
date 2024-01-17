@@ -70,7 +70,7 @@ class Profile extends Component {
           </h1>
         </div>
         <div className="flex flex-wrap flex-col justify-center items-center overflow-y-hidden">
-          <img className="w-full" src={food} alt="Food Image" />
+          <img className="w-full" src={food} alt="" />
         </div>
       </div>
           </>

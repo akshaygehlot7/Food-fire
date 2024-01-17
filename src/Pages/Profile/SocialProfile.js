@@ -7,26 +7,8 @@ import {
   Twitter_Link,
 } from "../../Constants/Constants";
 
-class SocialProfileClass extends Component {
-  constructor(props) {
-    super(props);
-    // console.log("SocialProfileClass child constructor");
-  }
+const SocialProfileClass =()=> {
 
-  async componentDidMount() {
-    // console.log("SocialProfileClass child componentDidMount");
-  }
-
-  componentDidUpdate() {
-    // console.log("SocialProfileClass child componentDidUpdate");
-  }
-
-  componentWillUnmount() {
-    // console.log("SocialProfileClass child componentWillUnmount");
-  }
-
-  render() {
-    // console.log("SocialProfileClass child render");
     return (
       <div className="flex gap-6 mt-5 justify-center">
         <a
@@ -58,6 +40,5 @@ class SocialProfileClass extends Component {
       </div>
     );
   }
-}
 
 export default SocialProfileClass;

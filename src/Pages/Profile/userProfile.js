@@ -1,24 +1,8 @@
 import { Component } from "react";
 import SocialProfileClass from "./SocialProfile";
 
-class ProfileUserClass extends Component {
-  constructor(props) {
-    super(props);
-    // console.log("ProfileUserClass child constructor");
-  }
-
-  componentDidMount() {
-    // console.log("ProfileUserClass child componentDidMount");
-  }
-  componentDidUpdate() {
-    // console.log("ProfileUserClass child componentDidUpdate");
-  }
-  componentWillUnmount() {
-    // console.log("ProfileUserClass child componentWillUnmount");
-  }
-  render() {
-    const { name, html_url, avatar_url, bio } = this.props.data; // accessing full json data as props from parent class `ProfileClass`
-    // console.log("ProfileUserClass child render");
+const ProfileUserClass=(props)=> {  
+    const { name, html_url, avatar_url, bio } = this.props.data;
     return (
       <div className="justify-center bg-slate-50 p-4">
         <h1 className="flex mb-4 justify-center">About Me</h1>
@@ -35,6 +19,5 @@ class ProfileUserClass extends Component {
       </div>
     );
   }
-}
 
 export default ProfileUserClass;

@@ -7,7 +7,7 @@ const useResData = (API_URL) => {
   // use useEffect for one time call getRestaurants using empty dependency array
   useEffect(() => {
     getRestaurants();
-  }, []);
+  }, [getRestaurants]);
 
   // async function getRestaurant to fetch API data
   async function getRestaurants() {

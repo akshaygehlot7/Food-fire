@@ -11,7 +11,7 @@ const useResMenuData = (
 
   useEffect(() => {
     getRestaurantInfo(); // call getRestaurantInfo function so it fetch api data and set data in restaurant state variable
-  }, []);
+  }, [getRestaurantInfo]);
 
   async function getRestaurantInfo() {
     try {
@@ -37,7 +37,7 @@ const useResMenuData = (
             ?.groupedCard?.cardGroupMap?.REGULAR?.cards?.map(
               (x) => x.card?.card
             )
-            ?.filter((x) => x["@type"] == MENU_ITEM_TYPE_KEY)
+            ?.filter((x) => x["@type"] === MENU_ITEM_TYPE_KEY)
             ?.map((x) => x.itemCards)
             .flat()
             .map((x) => x.card?.info) || [];

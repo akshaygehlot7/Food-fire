@@ -25,7 +25,7 @@ const Login = () => {
       navigate(-1);
     }
     console.log(getLocalStorage.token)
-  }, []);
+  }, [getLocalStorage]);
 
   function handleNavigate(values) {
     let index = values?.email.indexOf('@');

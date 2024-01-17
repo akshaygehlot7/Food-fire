@@ -22,7 +22,7 @@ export const MenuShimmer = () => {
         <div className="flex justify-center bg-slate-200">
           <div className="h-36 w-56 stroke animate" alt="shimer"></div>
           <div className="flex flex-col m-5">
-            <h2 className="shimmer-w40  stroke animate"></h2>
+            <p className="shimmer-w40"></p>
             <p className="shimmer-w20 stroke animate"></p>
             <div className="shimmer-w60  stroke animate"></div>
           </div>
@@ -32,7 +32,7 @@ export const MenuShimmer = () => {
       <div className="flex mt-10 justify-center mb-10">
         <div className="mt-8 w-4/5 ">
           <div className="menu-title-wrap ">
-            <h3 className="shimmer-w40 stroke animate"></h3>
+            <p className="shimmer-w40"></p>
             <p className="shimmer-w20 stroke animate"></p>
           </div>
           <div className="flex mb-10 flex-col justify-center ">
@@ -41,7 +41,7 @@ export const MenuShimmer = () => {
               .map((element, index) => (
                 <div className="h-60 mb-5 bg-slate-200" key={index}>
                   <div className="shimmer-item-details">
-                    <h3 className="shimmer-w40  stroke animate"></h3>
+                    <p className="shimmer-w40  stroke animate"></p>
                     <p className="shimmer-w20  stroke animate"> </p>
                     <p className="shimmer-w60  stroke animate"></p>
                   </div>
