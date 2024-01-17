@@ -22,7 +22,7 @@ export const shimmer_menu_card_unit = 4;
 
 // Github - username
 export const Github_UserName = "akshaygehlot7";
-export const Github_Repository_Name = "Namaste-React";
+export const Github_Repository_Name = "Food-fire";
 
 // Github API for User
 export const Github_API_User = "https://api.github.com/users/";

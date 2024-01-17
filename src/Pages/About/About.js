@@ -10,7 +10,7 @@ const About = () => {
         {/* used ternary condition to Show my profile and Hide my Profile and using nested routing */}
         {show ? (
           <>
-            <Link to={"/about"}>
+          <Link to={"/about"}>
               <button
                 className="bg-slate-400 text-white p-4 rounded-md border-none cursor-pointer text-lg font-bold hover:bg-slate-200 hover:text-black"
                 onClick={() => setShow(false)}
@@ -32,18 +32,18 @@ const About = () => {
         )}
       </div>
       <div className="flex flex-wrap m-10 justify-evenly items-center">
-        <div className="flex flex-wrap flex-col justify-end overflow-y-hidden items-end">
-          <h1>
+        <div className="flex flex-wrap flex-col justify-start overflow-y-hidden items-start">
+          <h1 className='text-5xl p-3 font-bold text-slate-700'>
             Welcome to <br /> The world of <br />
-            <span>Tasty & Fresh Food</span>
           </h1>
-          <h4>
+            <h1 className='text-5xl font-bold text-slate-500 p-3 bg-slate-100 rounded-2xl '>Tasty & Fresh Food</h1>
+          <h1 className='text-xl font-bold text-slate-700 p-3'>
             "Better you will feel if you eat a Food<span>Fire</span> healthy
             meal"
-          </h4>
+          </h1>
         </div>
         <div className="flex flex-wrap flex-col justify-center items-center overflow-y-hidden">
-          <img className="w-1/2" src={food} alt="Food Image" />
+          <img className="w-full" src={food} alt="Food Image" />
         </div>
       </div>
     </div>

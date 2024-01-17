@@ -39,33 +39,34 @@ class ProfileRepoClass extends Component {
     const [...repoList] = this.state.repoInfo;
     // console.log("ProfileRepoClass child render");
     return (
-      <div className="profile-repo-container">
+      <div className="bg-slate-100">
         {repoList
           .filter((repo) => repo.name === Github_Repository_Name)
           .map((repo) => {
             return (
-              <div key={repo.id} className="profile-repo">
+              <div key={repo.id} className="flex flex-col justify-center items-center">
                 <h1>
-                  <a href={repo.html_url} target="_blank" rel='noopener noreferrer'>{repo.name}</a>
+                  <a href={repo.html_url} target="_blank" rel='noopener noreferrer' className="text-2xl mb-4 text-slate-500 hover:bg-slate-700 hover:text-white">{repo.name}</a>
                 </h1>
-                <h3 className="repo-des">{repo.description}</h3>
-                <div className="profile-repo-items">
+                <h3 className="text-xl mb-4" style={{width: 600}}>{repo.description}</h3>
+
+                <div className="flex gap-4">
                   <h3>
-                    <a href={html_url} target="_blank" rel='noopener noreferrer'>
-                      <FiUsers />
-                      <span>{followers} Followers</span>
+                    <a href={html_url} target="_blank" rel='noopener noreferrer' className="flex items-center">
+                      <FiUsers size={24}/>
+                      <span className="text-xl">{followers} Followers</span>
                     </a>
                   </h3>
                   <h3>
-                    <a href={repo.html_url} target="_blank" rel='noopener noreferrer'>
-                      <BiGitRepoForked />
-                      <span>{repo.forks_count} Forks</span>
+                    <a href={repo.html_url} target="_blank" rel='noopener noreferrer' className="flex items-center">
+                      <BiGitRepoForked size={24} />
+                      <span className="text-xl">{repo.forks_count} Forks</span>
                     </a>
                   </h3>
                   <h3>
-                    <a href={repo.html_url} target="_blank" rel='noopener noreferrer'>
-                      <BiStar />
-                      <span>{repo.stargazers_count} Stars</span>
+                    <a href={repo.html_url} target="_blank" rel='noopener noreferrer' className="flex items-center">
+                      <BiStar size={24} />
+                      <span className="text-xl">{repo.stargazers_count} Stars</span>
                     </a>
                   </h3>
                 </div>

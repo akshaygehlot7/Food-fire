@@ -20,10 +20,11 @@ class ProfileUserClass extends Component {
     const { name, html_url, avatar_url, bio } = this.props.data; // accessing full json data as props from parent class `ProfileClass`
     // console.log("ProfileUserClass child render");
     return (
-      <div className="profile-user-card">
-        <a href={html_url} target="_blank" rel='noopener noreferrer'>
+      <div className="justify-center bg-slate-50 p-4">
+        <h1 className="flex mb-4 justify-center">About Me</h1>
+        <a href={html_url} target="_blank" rel='noopener noreferrer' className="mb-4 flex justify-center">
           <img
-            className="profile-user-img"
+            className="rounded-full justify-center items-center text-center w-60"
             src={avatar_url}
             alt={name}
             title={name}

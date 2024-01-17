@@ -13,7 +13,7 @@ const Header = () => {
 
   // call custom hook useAuth for user is loggedin or not
   const [isLoggedin, setIsLoggedin] = useAuth();
-  console.log(isLoggedin)
+  // console.log(isLoggedin)
 
   useEffect(() => {
     // if value of getLocalStorage is equal to null setIsLoggedin to false

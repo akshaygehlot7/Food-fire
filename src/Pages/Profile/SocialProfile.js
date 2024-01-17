@@ -28,7 +28,7 @@ class SocialProfileClass extends Component {
   render() {
     // console.log("SocialProfileClass child render");
     return (
-      <div className="social-media-container">
+      <div className="flex gap-6 mt-5 justify-center">
         <a
           href={Linkedin_Link}
           title="Follow me on Linkedin"
@@ -37,22 +37,22 @@ class SocialProfileClass extends Component {
           rel='noopener noreferrer'
         >
           <i>
-            <SiLinkedin title="Follow me on Linkedin" />
+            <SiLinkedin title="Follow me on Linkedin" size={30}/>
           </i>
         </a>
         <a href={Twitter_Link} title="Follow me on Twitter" className="icon-button twitter" target="_blank" rel='noopener noreferrer'>
           <i>
-            <SiTwitter title="Follow me on Twitter" />
+            <SiTwitter title="Follow me on Twitter" size={30}/>
           </i>
         </a>
         <a href={Github_Link} title="Follow me on Github" className="icon-button github" target="_blank" rel='noopener noreferrer'>
           <i>
-            <SiGithub title="Follow me on Github" />
+            <SiGithub title="Follow me on Github" size={30}/>
           </i>
         </a>
         <a href={Email_Link} title="Any Query! Mail me" className="icon-button email" target="_blank" rel='noopener noreferrer'>
           <i>
-            <SiGmail title="Any Query! Mail me" />
+            <SiGmail title="Any Query! Mail me" size={30}/>
           </i>
         </a>
       </div>
